@@ -21,6 +21,8 @@ tac_sim.m
 ```
 02plot_sim.py
 ```
+> [!CAUTION]
+> Ensure that simulated data is saved in [data](pet_data_sim/data/) in separate subdirectories for different patients and counting settings ($\color{red}{\text{Todo: example}}$ to guarantee compatibility with reconstruction code where data is read in (see [read_data.m](Codes_Reconstruction/read_data.m)).
 ## Description of the code
 
 ## Authors of the code
