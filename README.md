@@ -2,9 +2,12 @@
 This repository provides the source code for the paper "Exact Parameter Identification in PET Pharmacokinetic Modeling Using the Irreversible Two Tissue Compartment Model" as cited below.
 ## Requirements
 * The code in directory [Codes_Reconstruction](Codes_Reconstruction/) was written and tested with Matlab R2019a under Linux.
-* The code in directory [pet_data_sim](pet_data_sim/) was written and tested with Python $\color{red}{\text{Todo: Version}}$ under $\color{red}{\text{Todo: Distribution}}$. See [environment.yml](pet_data_sim/environment.yml) for the dependencies.
+* The code in directory [pet_data_sim](pet_data_sim/) was written and tested with Python $\color{red}{\text{Todo: Version}}$ under $\color{red}{\text{Todo: Distribution}}$. See [environment.yml](pet_data_sim/environment.yml) for the dependencies which are installed by calling
+```
+conda env create -f environment.yml
+```
   
-No dedicated installation is needed for the code, simply download the code and get started.
+No furtherdedicated installation is needed for the code, simply download the code and get started.
 ## Running the code
 Follow the instructions in the given order below to get started:
 
