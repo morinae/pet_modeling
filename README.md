@@ -4,7 +4,9 @@ This repository provides the source code for the paper "Exact Parameter Identifi
 * The code in directory [Codes_Reconstruction](Codes_Reconstruction/) was written and tested with Matlab R2019a under Linux. No dedicated installation is needed for the code, simply download the code and get started.
 * The code in directory [pet_data_sim](pet_data_sim/) was written and tested with Python $\color{red}{\text{Todo: Version}}$ under $\color{red}{\text{Todo: Distribution}}$. $\color{red}{\text{Todo: any necessary Python modules.}}$
 ## Running the code
-Get started as follows in the given order:
+Follow the instructions in the given order below to get started:
+
+**Data Simulation:** *see files in [pet_data_sim](pet_data_sim/)*
 1. Evaluate forward model by calling
 ```
 tac_sim.m
@@ -23,6 +25,15 @@ tac_sim.m
 ```
 > [!CAUTION]
 > Ensure that simulated data is saved in [data](pet_data_sim/data/) in separate subdirectories for different patients and counting settings ($\color{red}{\text{Todo: example}}$ to guarantee compatibility with reconstruction code where data is read in (see [read_data.m](Codes_Reconstruction/read_data.m)).
+
+**Parameter Reconstruction:** *see files in [Codes_Reconstruction](Codes_Reconstruction/)*
+
+5. Reconstruct parameters by calling
+```
+global_run.m
+```
+> [!NOTE]
+> This will reproduce the results (figures, tables) of our paper [referenced](## Publication)
 ## Description of the code
 
 ## Authors of the code
