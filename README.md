@@ -38,21 +38,21 @@ global_run.m
 In the following we briefly describe the purpose of each code file.
 
 **Data Simulation:**
-* <code>tac_sim.m</code>
-* <code>00sim_data.py</code>
-* <code>01osem.py</code>
-* <code>02plot_sim.py</code>
+* <code>tac_sim.m</code>: evaluates forward model for the ground truth parameters
+* <code>00sim_data.py</code>: generates the 4D brainweb phantom
+* <code>01osem.py</code>: simulates and reconstructs PET data
+* <code>02plot_sim.py</code>: generates plots for cross check
 
 **Parameter Reconstruction:**
-* <code>read_data.m</code>
-* <code>forward_model.m</code>
-* <code>check_theoretical_assumptions.m</code>
-* <code>global_run.m</code>
-* <code>IRGNM_modified.m</code>
-* <code>IRGNM_reduced.m</code>
-* <code>reconstruction_noise.m</code>
-* <code>reconstruction_noiseless.m</code>
-* <code>comparison_plot.m</code>
+* <code>read_data.m</code>: reads in simulated data
+* <code>forward_model.m</code>: implements forward model in PET pharmacokinetic modeling
+* <code>check_theoretical_assumptions.m</code>: verifies requisites necessary for parameter identifiability posed in Theorem 15 of our [paper](https://arxiv.org/abs/2305.16989)
+* <code>global_run.m</code>: main script to recover parameter reconstruction results of paper
+* <code>IRGNM_modified.m</code>: implements Iteratively Regularized Gauss Newton Method for full setup
+* <code>IRGNM_reduced.m</code>: implements Iteratively Regularized Gauss Newton Method for reduced setup
+* <code>reconstruction_noise.m</code>: computes representative reconstructions and gives respective plots in noisy setup
+* <code>reconstruction_noiseless.m</code>: computes representative reconstructions and gives respective plots in noiseless setup
+* <code>comparison_plot.m</code>: illustrates reconstructed curves, measured data and ground truth curves for comparability
 
 ## Authors of the code
 * Erion Morina [erion.morina@uni-graz.at](mailto:erion.morina@uni-graz.at)
