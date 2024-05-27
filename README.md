@@ -33,7 +33,7 @@ tac_sim.m
 global_run.m
 ```
 > [!NOTE]
-> This will reproduce the results (figures, tables) of our paper [referenced](## Publication)
+> This will reproduce the results (figures, tables) of our paper [referenced](##Publication)
 ## Description of the code
 
 ## Authors of the code
