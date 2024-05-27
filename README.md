@@ -11,4 +11,4 @@ This repository provides the source code for the paper "Exact Parameter Identifi
 ## Publication
 
 ## License
-The code in this project is licensed under the GPLv3 license - see the 
+The code in this project is licensed under the GPLv3 license - see the [LICENSE](LICENSE) file for details.
