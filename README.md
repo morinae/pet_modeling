@@ -34,6 +34,11 @@ global_run.m
 ```
 > [!NOTE]
 > This will reproduce the results (figures, tables) of our [paper](https://arxiv.org/abs/2305.16989) in the setup discussed there. Note further that step 5 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
+
+
+> [!WARNING]
+> Caution is advised regarding the change of hyperparameters (including regularization parameters, hyperparameters of IRGNM, ...) as the reconstructions are not guaranteed to succeed for different choices. See again our [paper](https://arxiv.org/abs/2305.16989) for the concrete choices of the hyperparameters.
+
 ## Description of the code
 In the following we briefly describe the purpose of each code file.
 
