@@ -1,7 +1,7 @@
 # pet_modeling_inprogress
 This repository provides the source code for the paper "Exact Parameter Identification in PET Pharmacokinetic Modeling Using the Irreversible Two Tissue Compartment Model" as cited below.
 ## Requirements
-The code in directory [Codes_Reconstruction](*/Codes_Reconstruction/)
+The code in directory [Codes_Reconstruction](Codes_Reconstruction/)
 ## Examples
 
 ## Description of the code
