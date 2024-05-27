@@ -33,7 +33,7 @@ tac_sim.m
 global_run.m
 ```
 > [!NOTE]
-> This will reproduce the results (figures, tables) of our paper [referenced](#Publication)
+> This will reproduce the results (figures, tables) of our paper [referenced](##Publication)
 ## Description of the code
 
 ## Authors of the code
@@ -43,10 +43,9 @@ global_run.m
 
 EM and MH are currently affiliated with the Department of Mathematics and Scientific Computing, University of Graz, Graz, Austria. GS is currently affiliated with the Department of Imaging and Pathology, KU Leuven, Leuven, Belgium.
 
-## Publication
+##Publication
 > [!IMPORTANT]
 > If you use this code, please cite the following associated publication.
-#Publication
 * M. Holler, E. Morina and G. Schramm. Exact parameter identification in PET pharmacokinetic modeling using the irreversible two tissue compartment model. To appear in Physics in Medicine & Biology, 2024. [arXiv](https://arxiv.org/abs/2305.16989)
   
 ## License
