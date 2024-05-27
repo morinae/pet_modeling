@@ -7,7 +7,7 @@ This repository provides the source code for the paper "Exact Parameter Identifi
 conda env create -f environment.yml
 ```
   
-No furtherdedicated installation is needed for the code, simply download the code and get started.
+No further dedicated installation is needed for the code, simply download the code and get started.
 ## Running the code
 Follow the instructions in the given order below to get started:
 
