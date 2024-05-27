@@ -1,0 +1,13 @@
+name: pet_data_sim
+
+channels:
+- conda-forge
+
+dependencies:
+- parallelproj~=1.8
+- pymirc~=0.29
+- h5py
+- pandas
+- ipython
+- cupy<13
+
