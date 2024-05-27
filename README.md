@@ -1,9 +1,26 @@
 # pet_modeling_inprogress
 This repository provides the source code for the paper "Exact Parameter Identification in PET Pharmacokinetic Modeling Using the Irreversible Two Tissue Compartment Model" as cited below.
 ## Requirements
-The code in directory [Codes_Reconstruction](Codes_Reconstruction/)
-## Examples
-
+* The code in directory [Codes_Reconstruction](Codes_Reconstruction/) was written and tested with Matlab R2019a under Linux. No dedicated installation is needed for the code, simply download the code and get started.
+* The code in directory [pet_data_sim](pet_data_sim/) was written and tested with Python $\color{red}{\text{Todo: Version}}$ under $\color{red}{\text{Todo: Distribution}}$. $\color{red}{\text{Todo: any necessary Python modules.}}$
+## Running the code
+Get started as follows in the given order:
+1. Evaluate forward model by calling
+```
+tac_sim.m
+```
+2. Generate 4D brainweb phantoms by calling
+```
+00sim_data.py
+```
+3. Simulate and reconstruct PET data by calling
+```
+01osem.py
+```
+4. Generate plots for cross check by calling
+```
+02plot_sim.py
+```
 ## Description of the code
 
 ## Authors of the code
