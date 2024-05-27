@@ -33,8 +33,26 @@ tac_sim.m
 global_run.m
 ```
 > [!NOTE]
-> This will reproduce the results (figures, tables) of our paper [referenced](## Publication)
+> This will reproduce the results (figures, tables) of our [paper](https://arxiv.org/abs/2305.16989) in the setup discussed there. Note further that step 5 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
 ## Description of the code
+In the following we briefly describe the purpose of each code file.
+
+**Data Simulation:**
+* <code>tac_sim.m</code>
+* <code>00sim_data.py</code>
+* <code>01osem.py</code>
+* <code>02plot_sim.py</code>
+
+**Parameter Reconstruction:**
+* <code>read_data.m</code>
+* <code>forward_model.m</code>
+* <code>check_theoretical_assumptions.m</code>
+* <code>global_run.m</code>
+* <code>IRGNM_modified.m</code>
+* <code>IRGNM_reduced.m</code>
+* <code>reconstruction_noise.m</code>
+* <code>reconstruction_noiseless.m</code>
+* <code>comparison_plot.m</code>
 
 ## Authors of the code
 * Erion Morina [erion.morina@uni-graz.at](mailto:erion.morina@uni-graz.at)
