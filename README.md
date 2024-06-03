@@ -5,6 +5,7 @@ This repository provides the source code for the paper "Exact Parameter Identifi
 * The code in directory [pet_data_sim](pet_data_sim/) was written and tested with Python $\color{red}{\text{Todo: Version}}$ under $\color{red}{\text{Todo: Distribution}}$. See [environment.yml](pet_data_sim/environment.yml) for the dependencies which are installed by calling
 ```
 conda env create -f environment.yml
+conda activate pet_data_sim
 ```
   
 No further dedicated installation is needed for the code, simply download the code and get started.
@@ -21,15 +22,15 @@ matlab -nodisplay -nosplash -nodesktop -r "run('tac_sim.m');exit;"
 ```
 2. Generate 4D brainweb phantoms by calling
 ```
-00sim_data.py
+python 00sim_data.py
 ```
 3. Simulate and reconstruct PET data by calling
 ```
-01osem.py
+python 01osem.py
 ```
 4. Generate plots for cross check by calling
 ```
-02plot_sim.py
+python 02plot_sim.py
 ```
 > [!CAUTION]
 > Ensure that simulated data is saved in [data](pet_data_sim/data/) in separate subdirectories for different patients and counting settings ($\color{red}{\text{Todo: Check how subdirectories are named and compatibility with read data file}}$) to guarantee compatibility with reconstruction code where data is read in (see [read_data.m](Codes_Reconstruction/read_data.m)).
