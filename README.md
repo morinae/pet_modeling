@@ -39,7 +39,7 @@ python 02plot_sim.py
 
 5. Reconstruct parameters by calling
 ```
-matlab -nodisplay -nosplash -nodesktop -r "run('global_run.m');exit;"
+matlab -r "run('global_run.m');"
 ```
 > [!NOTE]
 > This will reproduce the results (figures, tables) of our [paper](https://arxiv.org/abs/2305.16989) in the setup discussed there. Note further that step 5 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
