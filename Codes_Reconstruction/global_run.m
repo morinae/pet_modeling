@@ -1,5 +1,5 @@
-% patients = ["AD", "C"];
-patients = ["C"];
+patients = ["AD", "C"];
+% patients = ["C"];
 counters = [.1,1,10,0]; % 0 ... noiseless
 no_pat = size(patients,2);
 no_count = size(counters,2);
