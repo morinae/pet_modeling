@@ -5,10 +5,10 @@
 % part of file name based on patient dataset
 switch patient
     case "AD"
-        str = "../pet_data_sim/data/20240329_AD_";
+        str = "../pet_data_sim/data/AD_";
         rstr = "tacs_AD_frm_0";
     case "C"
-        str = "../pet_data_sim/data/20240329_C_";
+        str = "../pet_data_sim/data/C_";
         rstr = "tacs_C_frm_0";
     otherwise
         warning('Invalid patient type')
