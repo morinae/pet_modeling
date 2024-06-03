@@ -18,7 +18,7 @@ Follow the instructions in the given order below to get started:
 **Data Simulation:** *see files in [pet_data_sim](pet_data_sim/)*
 1. Evaluate forward model by calling
 ```
-matlab -nodisplay -nosplash -nodesktop -r "run('tac_sim.m');exit;"
+matlab -nodisplay -nosplash -nodesktop -r "run('eval_forward.m');exit;"
 ```
 2. Generate 4D brainweb phantoms by calling
 ```
@@ -52,7 +52,7 @@ matlab -nodisplay -nosplash -nodesktop -r "run('global_run.m');exit;"
 In the following we briefly describe the purpose of each code file.
 
 **Data Simulation:**
-* <code>tac_sim.m</code>: evaluates forward model for the ground truth parameters
+* <code>eval_forward.m</code>: evaluates forward model for the ground truth parameters
 * <code>00sim_data.py</code>: generates the 4D brainweb phantom
 * <code>01osem.py</code>: simulates and reconstructs PET data
 * <code>02plot_sim.py</code>: generates plots for cross check
