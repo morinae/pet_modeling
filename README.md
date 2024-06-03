@@ -8,7 +8,10 @@ conda env create -f environment.yml
 ```
   
 No further dedicated installation is needed for the code, simply download the code and get started.
-## Running the code
+
+## Demo example
+
+## Reproducing the results of the paper
 Follow the instructions in the given order below to get started:
 
 **Data Simulation:** *see files in [pet_data_sim](pet_data_sim/)*
