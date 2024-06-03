@@ -20,17 +20,9 @@ Follow the instructions in the given order below to get started:
 ```
 matlab -nodisplay -nosplash -nodesktop -r "run('eval_forward.m');exit;"
 ```
-2. Generate 4D brainweb phantoms by calling
+2. Simulate PET data
 ```
-python 00sim_data.py
-```
-3. Simulate and reconstruct PET data by calling
-```
-python 01osem.py
-```
-4. Generate plots for cross check by calling
-```
-python 02plot_sim.py
+python pet_datagen.py
 ```
 > [!CAUTION]
 > Ensure that simulated data is saved in [data](pet_data_sim/data/) in separate subdirectories for different patients and counting settings ($\color{red}{\text{Todo: Check how subdirectories are named and compatibility with read data file}}$) to guarantee compatibility with reconstruction code where data is read in (see [read_data.m](Codes_Reconstruction/read_data.m)).
@@ -53,15 +45,16 @@ In the following we briefly describe the purpose of each code file.
 
 **Data Simulation:**
 * <code>eval_forward.m</code>: evaluates forward model for the ground truth parameters
+* <code>pet_datagen.py</code>: main script to simulate PET data
 * <code>00sim_data.py</code>: generates the 4D brainweb phantom
 * <code>01osem.py</code>: simulates and reconstructs PET data
 * <code>02plot_sim.py</code>: generates plots for cross check
 
 **Parameter Reconstruction:**
+* <code>global_run.m</code>: main script to recover parameter reconstruction results of paper
 * <code>read_data.m</code>: reads in simulated data
 * <code>forward_model.m</code>: implements forward model in PET pharmacokinetic modeling
 * <code>check_theoretical_assumptions.m</code>: verifies requisites necessary for parameter identifiability posed in Theorem 15 of our [paper](https://arxiv.org/abs/2305.16989)
-* <code>global_run.m</code>: main script to recover parameter reconstruction results of paper
 * <code>IRGNM_modified.m</code>: implements Iteratively Regularized Gauss Newton Method for full setup
 * <code>IRGNM_reduced.m</code>: implements Iteratively Regularized Gauss Newton Method for reduced setup
 * <code>reconstruction_noise.m</code>: computes representative reconstructions and gives respective plots in noisy setup
