@@ -17,7 +17,7 @@ Follow the instructions in the given order below to get started:
 **Data Simulation:** *see files in [pet_data_sim](pet_data_sim/)*
 1. Evaluate forward model by calling
 ```
-tac_sim.m
+matlab -nodisplay -nosplash -nodesktop -r "run('tac_sim.m');exit;"
 ```
 2. Generate 4D brainweb phantoms by calling
 ```
@@ -38,7 +38,7 @@ tac_sim.m
 
 5. Reconstruct parameters by calling
 ```
-global_run.m
+matlab -nodisplay -nosplash -nodesktop -r "run('global_run.m');exit;"
 ```
 > [!NOTE]
 > This will reproduce the results (figures, tables) of our [paper](https://arxiv.org/abs/2305.16989) in the setup discussed there. Note further that step 5 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
