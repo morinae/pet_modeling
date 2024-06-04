@@ -30,7 +30,7 @@ matlab -nodisplay -nosplash -nodesktop -r "run('eval_forward.m');exit;"
 python pet_datagen.py
 ```
 > [!CAUTION]
-> Ensure that simulated data is saved in [data](pet_data_sim/data/) in separate subdirectories for different patients and counting settings ($\color{red}{\text{Todo: Check how subdirectories are named and compatibility with read data file}}$) to guarantee compatibility with reconstruction code where data is read in (see [read_data.m](Codes_Reconstruction/read_data.m)).
+> Ensure that simulated data is saved in [data](pet_data_sim/data/) in separate subdirectories for different patients and counting settings to guarantee compatibility (both file location and names) with reconstruction code where data is read in (see [read_data.m](Codes_Reconstruction/read_data.m)).
 
 **Parameter Reconstruction:** *see files in [Codes_Reconstruction](Codes_Reconstruction/)*
 
