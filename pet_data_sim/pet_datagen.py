@@ -14,5 +14,3 @@ flagfig = False
 
 if flagfig:
 	plot_sim.main()
-			
-
