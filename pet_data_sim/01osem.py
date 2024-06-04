@@ -347,7 +347,7 @@ for iseed, seed in enumerate(seeds):
     C_recon_wm_std[iseed] = float(x_up[phantom_data["wm_mask"] == 1].std())
     C_TOT_recon_std[iseed] = float(x_up[phantom_data["vessel_mask"] == 1].std())
     
-with h5py.File(f"{Path(phantom_file).stem}_frm_{frm:03}_s{seeds[0]}_{seeds[-1]}_sens_{scanner_sens:.1f}_recons.h5", "w") as f:
+with h5py.File(f"./{Path(phantom_file).stem[5:]}_{scanner_sens:.1f}/{Path(phantom_file).stem}_frm_{frm:03}_s{seeds[0]}_{seeds[-1]}_sens_{scanner_sens:.1f}_recons.h5", "w") as f:
     dset = f.create_dataset("C_recon_frontal", data = C_recon_frontal)
     dset = f.create_dataset("C_recon_temporal", data = C_recon_temporal)
     dset = f.create_dataset("C_recon_occipital", data = C_recon_occipital)
