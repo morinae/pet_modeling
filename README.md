@@ -34,11 +34,11 @@ python pet_datagen.py
 matlab -r "run('global_run.m');"
 ```
 > [!NOTE]
-> This will reproduce the results (figures, tables) of our [paper](https://arxiv.org/abs/2305.16989) in the setup discussed there. Note further that step 5 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
+> This will reproduce the results (figures, tables) of our [paper](https://doi.org/10.1088/1361-6560/ad539e) in the setup discussed there. Note further that step 5 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
 
 
 > [!WARNING]
-> Caution is advised regarding the change of hyperparameters (including regularization parameters, hyperparameters of IRGNM, ...) as the reconstructions are not guaranteed to succeed for different choices. See again our [paper](https://arxiv.org/abs/2305.16989) for the concrete choices of the hyperparameters.
+> Caution is advised regarding the change of hyperparameters (including regularization parameters, hyperparameters of IRGNM, ...) as the reconstructions are not guaranteed to succeed for different choices. See again our [paper](https://doi.org/10.1088/1361-6560/ad539e) for the concrete choices of the hyperparameters.
 
 ## Description of the code
 In the following we briefly describe the purpose of each code file.
@@ -54,7 +54,7 @@ In the following we briefly describe the purpose of each code file.
 * <code>global_run.m</code>: main script to recover parameter reconstruction results of paper
 * <code>read_data.m</code>: reads in simulated data
 * <code>forward_model.m</code>: implements forward model in PET pharmacokinetic modeling
-* <code>check_theoretical_assumptions.m</code>: verifies requisites necessary for parameter identifiability posed in Theorem 15 of our [paper](https://arxiv.org/abs/2305.16989)
+* <code>check_theoretical_assumptions.m</code>: verifies requisites necessary for parameter identifiability posed in Theorem 15 of our [paper](https://doi.org/10.1088/1361-6560/ad539e)
 * <code>IRGNM_modified.m</code>: implements Iteratively Regularized Gauss Newton Method for full setup
 * <code>IRGNM_reduced.m</code>: implements Iteratively Regularized Gauss Newton Method for reduced setup
 * <code>reconstruction_noise.m</code>: computes representative reconstructions and gives respective plots in noisy setup
@@ -71,7 +71,7 @@ EM and MH are currently affiliated with the Department of Mathematics and Scient
 ## Publication
 > [!IMPORTANT]
 > If you use this code, please cite the following associated publication.
-* M. Holler, E. Morina and G. Schramm. Exact parameter identification in PET pharmacokinetic modeling using the irreversible two tissue compartment model. To appear in Physics in Medicine & Biology, 2024. [arXiv](https://arxiv.org/abs/2305.16989)
+* M. Holler, E. Morina and G. Schramm. Exact parameter identification in PET pharmacokinetic modeling using the irreversible two tissue compartment model. Physics in Medicine & Biology, 2024. [https://doi.org/10.1088/1361-6560/ad539e](https://doi.org/10.1088/1361-6560/ad539e)
   
 ## License
 The code in this project is licensed under the GPLv3 license - see the [LICENSE](LICENSE) file for details.
