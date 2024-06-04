@@ -56,7 +56,7 @@ ex = 20;
 delta_y = 1e-3;
 fac = 2;
 Delta_y = fac*ones(ex,1)*delta_y;
-
+rng(0);         % seed random number generator
 C_TOT_noisy = abs(C_TOT_true + randn(ex,size(C_TOT_true,2))*delta_y);
 CT_recon_frontal = abs(CT_true_frontal + randn(ex,size(CT_true_frontal,2))*delta_y);
 CT_recon_temporal = abs(CT_true_temporal + randn(ex,size(CT_true_temporal,2))*delta_y);
