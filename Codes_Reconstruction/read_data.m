@@ -18,13 +18,13 @@ end
 switch counter
     case 10
         estr = "_s0_19_sens_10.0_recons.h5";
-        cstr = str + "10/";
+        cstr = str + "10.0/";
     case 1
         estr = "_s0_19_sens_1.0_recons.h5";
-        cstr = str + "1/";
+        cstr = str + "1.0/";
     case 0.1
         estr = "_s0_19_sens_0.1_recons.h5";
-        cstr = str + "01/";
+        cstr = str + "0.1/";
     otherwise
         warning('Invalid counter frequency')
 end
