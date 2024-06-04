@@ -51,9 +51,9 @@ In the following we briefly describe the purpose of each code file.
 **Data Simulation:**
 * <code>eval_forward.m</code>: evaluates forward model for the ground truth parameters
 * <code>pet_datagen.py</code>: main script to simulate PET data
-* <code>00sim_data.py</code>: generates the 4D brainweb phantom
-* <code>01osem.py</code>: simulates and reconstructs PET data
-* <code>02plot_sim.py</code>: generates plots for cross check
+* <code>sim_data.py</code>: generates the 4D brainweb phantom
+* <code>osem.py</code>: simulates and reconstructs PET data
+* <code>plot_sim.py</code>: generates plots for cross check
 
 **Parameter Reconstruction:**
 * <code>demo_recon.m</code>: runs a quick demo example
