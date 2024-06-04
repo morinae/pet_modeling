@@ -11,6 +11,11 @@ conda activate pet_data_sim
 No further dedicated installation is needed for the code, simply download the code and get started.
 
 ## Demo example
+To run a quick demo example where a simple reconstruction example is computed (without need of preceeding data generation) call
+```
+matlab -r "run('demo_recon.m');"
+```
+Note that in [demo_recon.m](Codes_Reconstruction/demo_recon.m) the noise model is kept simple to enable trying out the reconstruction algorithm immediately. For a realistic physical noise model see the steps on data simulation outlined below.
 
 ## Reproducing the results of the paper
 Follow the instructions in the given order below to get started:
