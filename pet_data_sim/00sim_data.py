@@ -5,14 +5,18 @@ import pymirc.viewer as pv
 import array_api_compat.numpy as np
 import h5py
 import matplotlib.pyplot as plt
-
+import argparse
 import array_api_compat.numpy as xp
 from pathlib import Path
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--phantom_file", default="tacs_C.h5")
+args = parser.parse_args()
+tac_file = args.phantom_file
 # %%
 dev = "cpu"
 fbv = 0.05
-tac_file = "tacs_AD.h5"
+#tac_file = "tacs_AD.h5"
 
 # %%
 # load the segmented brain data
