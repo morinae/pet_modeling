@@ -1,1 +1,0 @@
-Here the simulated data based on the the C dataset in the low counting regime will be saved.
