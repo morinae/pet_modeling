@@ -34,7 +34,7 @@ python pet_datagen.py
 
 **Parameter Reconstruction:** *see files in [Codes_Reconstruction](Codes_Reconstruction/)*
 
-5. Reconstruct parameters by calling
+3. Reconstruct parameters by calling
 ```
 matlab -r "run('global_run.m');"
 ```
@@ -56,6 +56,7 @@ In the following we briefly describe the purpose of each code file.
 * <code>02plot_sim.py</code>: generates plots for cross check
 
 **Parameter Reconstruction:**
+* <code>demo_recon.m</code>: runs a quick demo example
 * <code>global_run.m</code>: main script to recover parameter reconstruction results of paper
 * <code>read_data.m</code>: reads in simulated data
 * <code>forward_model.m</code>: implements forward model in PET pharmacokinetic modeling
