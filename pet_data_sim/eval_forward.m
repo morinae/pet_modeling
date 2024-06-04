@@ -2,7 +2,7 @@
 % AIF fit based on Feng model with parameter fitted from https://doi.org/10.1186/s40658-020-00330-x
 % K values from https://journals.sagepub.com/doi/epdf/10.1038/jcbfm.1991.65
 
-figflag = 0; % flag for plotting ground truth curves
+flagfig = 0; % flag for plotting ground truth curves
 
 subjects = ["AD", "C"];
 
