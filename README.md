@@ -39,7 +39,7 @@ python pet_datagen.py
 matlab -r "run('global_run.m');"
 ```
 > [!NOTE]
-> This will reproduce the results (figures, tables) of our [paper](https://doi.org/10.1088/1361-6560/ad539e) in the setup discussed there. Note further that step 5 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
+> This will reproduce the results (figures, tables) of our [paper](https://doi.org/10.1088/1361-6560/ad539e) in the setup discussed there. Note further that step 3 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
 
 
 > [!WARNING]
