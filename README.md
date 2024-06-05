@@ -13,7 +13,7 @@ No further dedicated installation is needed for the code, simply download the co
 ## Demo example
 To run a quick demo example where a simple reconstruction example is computed (without need of preceeding data generation) call
 ```
-matlab -r "run('demo_recon.m');"
+matlab -r "run('./Codes_Reconstruction/demo_recon.m');"
 ```
 Note that in [demo_recon.m](Codes_Reconstruction/demo_recon.m) the noise model is kept simple to enable trying out the reconstruction algorithm immediately. For a realistic physical noise model see the steps on data simulation outlined below.
 
@@ -23,20 +23,18 @@ Follow the instructions in the given order below to get started:
 **Data Simulation:** *see files in [pet_data_sim](pet_data_sim/)*
 1. Evaluate forward model by calling
 ```
-matlab -nodisplay -nosplash -nodesktop -r "run('eval_forward.m');exit;"
+matlab -nodisplay -nosplash -nodesktop -r "run('./pet_data_sim/eval_forward.m');exit;"
 ```
 2. Simulate PET data
 ```
 python pet_datagen.py
 ```
-> [!CAUTION]
-> Ensure that simulated data is saved in [data](pet_data_sim/data/) in separate subdirectories for different patients and counting settings to guarantee compatibility (both file location and names) with reconstruction code where data is read in (see [read_data.m](Codes_Reconstruction/read_data.m)).
 
 **Parameter Reconstruction:** *see files in [Codes_Reconstruction](Codes_Reconstruction/)*
 
 3. Reconstruct parameters by calling
 ```
-matlab -r "run('global_run.m');"
+matlab -r "run('./Codes_Reconstruction/global_run.m');"
 ```
 > [!NOTE]
 > This will reproduce the results (figures, tables) of our [paper](https://doi.org/10.1088/1361-6560/ad539e) in the setup discussed there. Note further that step 3 automatically generates a .txt file which includes more detailed information on the reconstructions (compare with paper).
