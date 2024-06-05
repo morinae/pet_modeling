@@ -27,7 +27,7 @@ matlab -nodisplay -nosplash -nodesktop -r "run('./pet_data_sim/eval_forward.m');
 ```
 2. Simulate PET data
 ```
-python pet_datagen.py
+cd pet_data_sim && python pet_datagen.py && cd ..
 ```
 
 **Parameter Reconstruction:** *see files in [Codes_Reconstruction](Codes_Reconstruction/)*
